@@ -1,0 +1,74 @@
+body {
+  background-color: green;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-size: 10px; 
+    color: #fff;
+}
+#answer {
+    font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+    text-align: center;
+    margin: 100px auto 50px;
+}
+#answer h1 { 
+  font-size: 250px;
+    line-height: .8em;
+    margin: 0;
+}
+#answer img {
+    width:240px;
+}
+body.yes {
+    background-color: red;
+}
+body.yes #answer p {
+    font-size: 100px;
+    margin: 0;
+}
+#credits, #other-shit {
+    margin:10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+#credits {
+    left: 0;
+}
+#other-shit {
+    right: 0;
+}
+#credits a {
+    color: #fff;
+    font-weight: bold;
+}
+#credits a:hover {
+    text-decoration: underline;
+}
+#other-shit .forecast-io {
+    color: #fff;
+    text-decoration:none;
+    display:block;
+}
+
+/**
+    Mobile device styles.
+    Should invert to be mobile-first...but didn't.
+**/
+@media (max-device-width : 667px) {
+    #answer h1 {
+        font-size: 300px;
+        margin: 50px 0;
+    }
+    #answer p {
+        margin:50px 0;
+    }
+    #answer img {
+        width:100%;
+    }
+    #credits, #other-shit {
+        position: static; 
+    }
+    #credits {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+}
